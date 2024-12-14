@@ -17,12 +17,14 @@ nav {
     background-color: hsl(211, 71%, 10%); /* Dark navy */
 }
 
+/* Logo image */
 .logo_img {
     width: 7vw;
     height: 7vh;
     margin-left: 2vw; /* Add some margin to the left */
 }
 
+/* Navigation items */
 ul {
     list-style: none;
     margin: 0;
@@ -32,12 +34,14 @@ ul {
     flex-grow: 1;
 }
 
+/* Navigation item styles */
 .nav-item {
-    padding: 1vh 2vw;
-    font-size: 1.5vw;
+    padding: 1vh 1vw;
+    font-size: 1.1vw;
     color: white;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    align-items: center;
 }
 
 .nav-item a {
@@ -50,15 +54,47 @@ ul {
     color: #00aaff;
 }
 
+/* Basket icon */
 .bi-basket-fill {
     color: white;
     position: absolute;
     right: 5vw; /* Align to the right of the navigation */
     top: 3vh;
-    font-size: 3vw;
+    font-size: 2vw;
     cursor: pointer;
 }
 
 .bi-basket-fill:hover {
     color: #00aaff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) { /* For tablets and phones */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo_img {
+        width: 15vw; /* Adjusted logo size for smaller screens */
+        height: 15vh;
+        margin-left: 0;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 1vh 2vw;
+        font-size: 2vw; /* Larger font size for better readability on small screens */
+    }
+
+    .bi-basket-fill {
+        right: 2vw; /* Adjust icon position for smaller screens */
+        top: 2vh;
+        font-size: 5vw; /* Larger icon size for better visibility on small screens */
+    }
 }
