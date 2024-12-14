@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Form</title>
+    <link rel="stylesheet" href="medical_form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_img">
+                <img src="logo.png" alt="Exocatalysm Logo">
+            </div>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">FAQ</a></li>
+                <li class="nav-item"><a href="#">Product</a></li>
+                <li class="nav-item"><a href="#">Medical Form</a></li>
+                <li class="nav-item"><i class="bi bi-basket-fill"></i></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Medical Form</h1>
+            <form action="/submit-form" method="post">
+                <section>
+                    <h2>Personal Information</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </section>
+                
+                <section>
+                    <h2>Medical History</h2>
+                    <label for="dod">Date of Diagnosis:</label>
+                    <input type="date" id="dod" name="dod" required>
+
+                    <label for="conditions">Do you have any current medical conditions?</label>
+                    <input type="checkbox" id="conditions_yes" name="conditions" value="yes"> Yes
+                    <input type="checkbox" id="conditions_no" name="conditions" value="no"> No
+                    <input type="text" id="conditions_explanation" name="conditions_explanation" placeholder="Explain your 'yes' answer" class="explanation-field" required>
+
+                    <label for="medications">Are you currently taking any medications?</label>
+                    <input type="checkbox" id="medications_yes" name="medications" value="yes"> Yes
+                    <input type="checkbox" id="medications_no" name="medications" value="no"> No
+                    <input type="text" id="medications_explanation" name="medications_explanation" placeholder="Explain your 'yes' answer" class="explanation-field" required>
+                    
+                    <label for="smoker">Are you a smoker?</label>
+                    <input type="checkbox" id="smoker_yes" name="smoker" value="yes"> Yes
+                    <input type="checkbox" id="smoker_no" name="smoker" value="no"> No
+                    
+                    <label for="physical_activity">Do you engage in regular physical activity?</label>
+                    <input type="checkbox" id="physical_activity_yes" name="physical_activity" value="yes"> Yes
+                    <input type="checkbox" id="physical_activity_no" name="physical_activity" value="no"> No   
+                    
+                    <label for="family_history">Do you have a family history of chronic illnesses?</label>
+                    <input type="checkbox" id="family_history_yes" name="family_history" value="yes"> Yes
+                    <input type="checkbox" id="family_history_no" name="family_history" value="no"> No
+                    <input type="text" id="family_history_explanation" name="family_history_explanation" placeholder="Explain your 'No' answer" class="explanation-field">
+
+                    <label for="diagnosis-condition">Have you been diagnosed with any of the following conditions?</label>
+                    <input type="checkbox" id="Autoimmune_diseases" name="Autoimmune_diseases" value="Autoimmune diseases"> Autoimmune diseases  
+                    <input type="checkbox" id="Heart_diseases" name="Heart_diseases" value="Heart diseases"> Heart diseases 
+                    <input type="checkbox" id="Systemic_diseases" name="Systemic_diseases" value="Systemic diseases"> Systemic diseases   
+                    <input type="checkbox" id="Neurological_diseases" name="Neurological_diseases" value="Neurological diseases"> Neurological diseases
+                    <input type="checkbox" id="Respiratory_diseases" name="Respiratory_diseases" value="Respiratory diseases"> Respiratory diseases   
+                    <input type="checkbox" id="other" name="other" value="other"> other 
+                    <input type="text" id="other_explanation" placeholder="please specify" class="explanation-field">
+
+                    <label for="medications-condition">Have you been diagnosed with any of the following conditions?</label>
+                    <input type="checkbox" id="medications" name="medications" value="Medication"> Medication  
+                    <input type="checkbox" id="Physical_therapy" name="Physical_therapy" value="Physical therapy"> Physical therapy 
+                    <input type="checkbox" id="Surgery" name="Surgery" value="Surgery"> Surgery  
+                    <input type="checkbox" id="Alternative_therapies" name="Alternative_therapies" value="Alternative therapies"> Alternative therapies 
+                    <input type="checkbox" id="other" name="other" value="other"> other 
+                    <input type="text" id="other_medication_explanation" placeholder="please specify" class="explanation-field">
+
+                    <label for="allergies">Do you have any allergies?</label>
+                    <input type="checkbox" id="allergies_yes" name="allergies" value="yes"> Yes
+                    <input type="checkbox" id="allergies_no" name="allergies" value="no"> No
+                    <input type="text" id="allergies_explanation" name="allergies_explanation" placeholder="Explain your 'yes' answer" class="explanation-field">
+
+                    <label for="chronic_conditions">Have you been diagnosed with any of the following conditions?</label>
+                    <input type="checkbox" id="Diabetes" name="Diabetes" value="Diabetes"> Diabetes   
+                    <input type="checkbox" id="High_blood_pressure" name="High_blood_pressure" value="High blood pressure"> High blood pressure
+                    <input type="checkbox" id="Heart_disease" name="Heart_disease" value="Heart disease"> Heart disease   
+                    <input type="checkbox" id="Lung_diseases" name="Lung_diseases" value="Lung diseases"> Lung diseases 
+                    <input type="checkbox" id="Liver_or_kidney_diseases" name="Liver_or_kidney_diseases" value="Liver or kidney diseases"> Liver or kidney diseases 
+                    <input type="checkbox" id="other" name="other" value="other"> other 
+                    <input type="text" id="chronic_conditions_explanation" placeholder="please specify" class="explanation-field">
+
+                    <label for="pregnancy">Are you currently pregnant or breastfeeding?</label>
+                    <input type="checkbox" id="pregnancy_yes" name="pregnancy" value="yes"> Yes
+                    <input type="checkbox" id="pregnancy_no" name="pregnancy" value="no"> No
+
+                    <label for="concerns_questions">Do you have any concerns or questions regarding the treatment that haven't been answered in the FAQ?</label>
+                    <input type="checkbox" id="concerns_yes" name="concerns" value="yes"> Yes
+                    <input type="checkbox" id="concerns_no" name="concerns" value="no"> No
+                    <input type="text" id="concerns_explanation" name="concerns_explanation" placeholder="Explain your 'yes' answer" class="explanation-field">
+                </section>
+
+                <section>
+                    <h2>Emergency Contact Information</h2>
+                    <label for="emergency_contact_name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency_contact_name" name="emergency_contact_name" required>
+                    
+                    <label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+                    <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" pattern="[0-9]{10}" required>
+                </section>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
