@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Form</title>
-    <link rel="stylesheet" href="medical_form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="medical_form.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo_img">
-                <img src="logo.png" alt="Exocatalysm Logo">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="medical_form.html">Medical Form</a></li>
+                    <li class="nav-item"><i class="bi bi-basket-fill"></i></li>
+                </ul>
             </div>
-            <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-                <li class="nav-item"><a href="#">FAQ</a></li>
-                <li class="nav-item"><a href="#">Product</a></li>
-                <li class="nav-item"><a href="#">Medical Form</a></li>
-                <li class="nav-item"><i class="bi bi-basket-fill"></i></li>
-            </ul>
-        </nav>
-    </header>
-    
+        </div>
+    </nav>
+
     <main>
         <div class="container">
             <h1>Medical Form</h1>
@@ -51,23 +57,21 @@
 
                     <label for="conditions">Do you have any current medical conditions?</label>
                     <input type="checkbox" id="conditions_yes" name="conditions" value="yes"> Yes
-                    <input type="checkbox" id="conditions_no" name="conditions" value="no">No
+                    <input type="checkbox" id="conditions_no" name="conditions" value="no"> No
                     <input type="text" id="conditions_explanation" name="conditions_explanation" placeholder="Explain your 'yes' answer" class="explanation-field" required>
 
                     <label for="medications">Are you currently taking any medications?</label>
                     <input type="checkbox" id="medications_yes" name="medications" value="yes">Yes
                     <input type="checkbox" id="medications_no" name="medications" value="no">No
                     <input type="text" id="medications_explanation" name="medications_explanation" placeholder="Explain your 'yes' answer" class="explanation-field" required>
-                    
-                    
+
                     <label for="physical_activity">Do you engage in regular physical activity?</label>
                     <input type="checkbox" id="physical_activity_yes" name="physical_activity" value="yes">Yes
                     <input type="checkbox" id="physical_activity_no" name="physical_activity" value="no">No   
-                    
+
                     <label for="smoker">Are you a smoker?</label>
                     <input type="checkbox" id="smoker_yes" name="smoker" value="yes">Yes
                     <input type="checkbox" id="smoker_no" name="smoker" value="no">No
-                    
 
                     <label for="family_history">Do you have a family history of chronic illnesses?</label>
                     <input type="checkbox" id="family_history_yes" name="family_history" value="yes">Yes
@@ -116,17 +120,34 @@
                 </section>
 
                 <section>
-                    <h2>Emergency Contact Information</h2>
+                    <h2>Medical History Details</h2>
+                    <label for="previous_illness">Have you had any of the following illnesses?</label>
+                    <input type="checkbox" id="Hypertension" name="Hypertension" value="Hypertension">Hypertension   
+                    <input type="checkbox" id="Diabetes" name="Diabetes" value="Diabetes">Diabetes  
+                    <input type="checkbox" id="Heart_disease" name="Heart_disease" value="Heart disease">Heart disease  
+                    <input type="checkbox" id="Asthma" name="Asthma" value="Asthma">Asthma  
+                    <input type="checkbox" id="other" name="other" value="other">other 
+                    <input type="text" id="previous_illness_explanation" placeholder="please specify" class="explanation-field">
+                </section>
+
+                <section>
+                    <h2>Emergency Contact</h2>
                     <label for="emergency_contact_name">Emergency Contact Name:</label>
                     <input type="text" id="emergency_contact_name" name="emergency_contact_name" required>
-                    
-                    <label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+
+                    <label for="emergency_contact_relationship">Relationship to You:</label>
+                    <input type="text" id="emergency_contact_relationship" name="emergency_contact_relationship" required>
+
+                    <label for="emergency_contact_phone">Phone Number:</label>
                     <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" pattern="[0-9]{10}" required>
                 </section>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </main>
-</body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
 </html>
