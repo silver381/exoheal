@@ -94,13 +94,14 @@ ul {
     }
 
     .nav-item {
+        margin-bottom:4px ;
         padding: 1vh 2vw;
         font-size: 2vw;
     }
 
     .bi-basket-fill {
-        right: 2vw; /* Ensures basket stays in view */
-        top: 2vh; /* Ensures basket stays in view */
-        font-size: 5vw; /* Scales up on smaller screens */
+        right: -0vw; /* Ensures basket stays in view */
+        top: -1.2vh; /* Ensures basket stays in view */
+        font-size: 4.5vw; /* Scales up on smaller screens */
     }
 }
