@@ -99,9 +99,26 @@ ul {
     }
 
     .bi-basket-fill {
-        right: 2vw; /* Ensures basket stays in view */
-        top: 2vh; /* Ensures basket stays in view */
-        font-size: 5vw; /* Scales up on smaller screens */
+        right: 46vw;
+        top: 51vh;
+        font-size: 5vw;
+    }
+
+    .carousel .d-block {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 7vw;
+    }
+
+    .carousel-caption p {
+        font-size: 5vw;
+    }
+
+    .btn {
+        font-size: 18px;
+        width: 80vw;
     }
 }
 .cards{
