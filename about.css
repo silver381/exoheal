@@ -168,6 +168,7 @@ ul {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin-left: 80vh;
 }
 
 .container_about{
@@ -212,16 +213,32 @@ ul {
 
 .col{
     height: 30%;
+    flex-basis: 33.33%;
+
 }
 .card-text{
     color: #333;
     font-size: 16px;
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+.card-title{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .card-img-top{
-    height: 500px;
+    height: 350px;
     object-fit: cover;
+}
+
+.carousel-caption{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 170px;
 }

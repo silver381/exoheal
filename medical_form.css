@@ -203,8 +203,8 @@ input[type="checkbox"]:not(:checked) ~ .explanation-field {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: hsl(211, 71%, 25%); /* Lighter navy */
+.btn:hover{
+    background-color:  hsl(211, 71%, 25%);
 }
 
 input[type="date"] {

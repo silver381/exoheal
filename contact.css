@@ -167,3 +167,7 @@ button[type="submit"] {
     margin-top: 16px;
     width: 75vw;
 }
+
+.btn:hover{
+    background-color:  hsl(211, 71%, 25%);
+}
