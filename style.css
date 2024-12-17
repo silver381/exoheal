@@ -118,6 +118,12 @@ ul {
 
 }
 
+.carousel{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
 .carousel-caption p{
     text-align: center;
     font-size: 30px;
