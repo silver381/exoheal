@@ -103,6 +103,25 @@ ul {
         top: 2vh; /* Ensures basket stays in view */
         font-size: 5vw; /* Scales up on smaller screens */
     }
+
+    .d-block {
+        height: 40vh; /* Adjust carousel height */
+    }
+
+    .carousel-caption h5 {
+        font-size: 4vw;
+        margin-bottom: 5vh;
+    }
+
+    .carousel-caption p {
+        font-size: 3vw;
+        margin-bottom: 5vh;
+    }
+
+    .btn {
+        width: 80vw; 
+        font-size: 4vw; 
+    }
 }
 
 .d-block{
@@ -118,11 +137,12 @@ ul {
 
 }
 
-.carousel{
-    height: 500px;
+.carousel img{
     width: 100%;
-    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
+
 
 .carousel-caption p{
     text-align: center;
@@ -141,6 +161,7 @@ ul {
     font-size: 23px;
     margin-top: 16px;
     width: 65vw;
+    margin-bottom: 20px;
 }
 
 .btn:hover{
