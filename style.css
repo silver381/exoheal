@@ -75,7 +75,7 @@ ul {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     nav {
         flex-direction: column;
         height: auto;
@@ -109,12 +109,12 @@ ul {
     }
 
     .carousel-caption h5 {
-        font-size: 4vw;
+        font-size: 1vw;
         margin-bottom: 5vh;
     }
 
     .carousel-caption p {
-        font-size: 3vw;
+        font-size: 1vw;
         margin-bottom: 5vh;
     }
 
