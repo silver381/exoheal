@@ -11,8 +11,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" class="logo_img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,21 @@
                     <h2>Personal Information</h2>
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required>
+
                     
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" id="email" name="email" class="email_control" required>
+                    
+                
+                        <label for="gender" class="form-label">Gender:</label>
+                        <select id="gender" name="gender" class="gender_select" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    
+                        
                     <label for="dob">Date of Birth:</label>
                     <input type="date" id="dob" name="dob" required>
                     
@@ -76,7 +90,7 @@
                     <label for="family_history">Do you have a family history of chronic illnesses?</label>
                     <input type="checkbox" id="family_history_yes" name="family_history" value="yes">Yes
                     <input type="checkbox" id="family_history_no" name="family_history" value="no">No
-                    <input type="text" id="family_history_explanation" name="family_history_explanation" placeholder="Explain your 'No' answer" class="explanation-field">
+                    <input type="text" id="family_history_explanation" name="family_history_explanation" placeholder="Explain your 'yes' answer" class="explanation-field">
 
                     <label for="diagnosis-condition">Have you been diagnosed with any of the following conditions?</label>
                     <input type="checkbox" id="Autoimmune_diseases" name="Autoimmune_diseases" value="Autoimmune diseases">Autoimmune diseases  

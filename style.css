@@ -13,8 +13,8 @@
 
 /* Logo image */
 .logo_img {
-    width: 6vw;
-    height: 6vh;
+    width: 5.5vw;
+    height: 9vh;
     margin-left: 2vw;
 }
 
@@ -63,8 +63,9 @@ ul {
 /* Basket icon */
 .bi-basket-fill {
     color: white;
-    right: 2vw; /* Adjusts the right offset */
-    top: 2vh; /* Adjusts the top offset */
+    position: absolute;
+    right: -15vw; /* Adjusts the right offset */
+    top: -1vh; /* Adjusts the top offset */
     font-size: 2vw; /* Scales with screen size */
     cursor: pointer;
 }
