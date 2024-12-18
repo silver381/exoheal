@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* Navigation bar styles */
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
@@ -74,6 +78,345 @@ ul {
     color: #00aaff;
 }
 
+/* Carousel styles */
+
+.carousel{
+    width: 40vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item {
+    width: 40vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.d-block{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-card {
+    background-position: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    margin-left: 29vw;
+    margin-top: -80vh;
+    padding-left: 60vw;
+    border-radius: 0%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.main-card .card-title {
+    width: 20vw;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -63vw;
+    font-weight: bolder;
+}
+
+.main-card .card-text {
+    font-size: 1vw;
+    margin-top: 1px;
+    margin-left: -59vw;
+    font-weight: bold;
+}
+.rating {
+    float:left;
+    border:none;
+    position: relative;
+    margin-left: -59vw;
+    margin-top: -1vw;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0, 0, 0, 0);
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+}
+.rating:not(:checked) > label:before {
+    content:'★ ';
+}
+.rating > input:checked ~ label {
+    color: #f70;
+}
+.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating > input:checked + label:hover, .rating > input:checked + label:hover ~ label, .rating > input:checked ~ label:hover, .rating > input:checked ~ label:hover ~ label, .rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+}
+.rating > label:active {
+    position:relative;
+}
+
+.card-price{
+    width: 100%;
+    width: 20vw;
+    background-position: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    margin-left: 27.92vw;
+    margin-top :-60vh ;
+    padding-left: 0vw;
+}
+
+.card-price-title{
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -4vw;
+    font-weight: bolder;
+}
+
+input[type="radio"]{
+    margin-bottom: 3vh ;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    align-items: center;
+    width: 7vw;
+    margin: 0 auto; /* Center the input group */
+    margin-left: 1vw;
+    border: 1px rgb(193, 193, 193) solid;
+}
+
+.input-group .form-control {
+    border: none;
+}
+
+.input-group .btn{
+    border-radius: 0%;
+    display: flex;
+    border: none;
+
+}
+
+.addtocart{
+    width: 20vw; /* Set a fixed width for both buttons */
+    padding: 10px;
+    background-color: hsl(211, 71%, 20%);
+    color: white;
+    text-align: center;
+    border-radius: 0%;
+    border: none;
+    position: absolute;
+    left: 9vw;
+    top: 12vh;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+.buynow {
+    width: 20vw; 
+    padding: 10px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    text-align: center;
+    border-radius: 0%;
+    position: absolute;
+    border: none;
+    left: 33vw;
+    top: 12vh;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+.addtocart:hover{
+    background-color: hsl(0, 0%, 0%);
+}
+
+.buynow:hover{
+    background-color: hsl(211, 71%, 20%);
+}
+
+.video-card{
+    width: 100%;
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+    margin-top: -40vh;
+    margin-left: 33vw;
+}
+
+/* Container for the mini photos */
+.mini-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    gap: 10px; /* Space between images */
+    margin-left: -9vw;
+    margin-top: -25vh; /* Center the grid */
+    max-width: 600px; /* Optional: Limit the width */
+  }
+  
+  /* Individual images */
+  .mini-photo {
+    width: 100%; /* Ensure images fill their grid cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the images look good */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+
+  .material-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .custom-radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 1vh 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .custom-radio input {
+    display: none;
+  }
+
+  .custom-radio span {
+    position: relative;
+    z-index: 1;
+    color: #333;
+  }
+
+  .custom-radio input:checked + span {
+    color: #fff;
+  }
+
+  .custom-radio:hover {
+    background-color: #f7f7f7;
+    border-color: #aaa;
+  }
+
+  .custom-radio input:checked + span {
+    background-color: hsl(211, 71%, 20%);
+    border-color: #007bff;
+    color: white;
+    padding: 1.4vh 2.2vw;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+  }
+
+  .custom-radio input:focus + span {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+
+/* Container for carousel items */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+  }
+  
+  .carousel-item img {
+    transition: filter 0.2s ease; /* Smooth blur */
+  }
+  
+  /* Blurred effect on the image */
+  .carousel-item img.blurred {
+    filter: blur(4px); /* Adjust blur level */
+  }
+  
+  /* Zoom box styling */
+  .zoom-box {
+    position: absolute;
+    border: 2px solid #000;
+    width: 200px; /* Size of the zoom box */
+    height: 200px;
+    overflow: hidden;
+    pointer-events: none; /* Prevent interaction with zoom box */
+    z-index: 10;
+    display: none; /* Initially hidden */
+    background-color: white;
+  }
+  
+  .zoom-box img {
+    position: absolute;
+    width: 300%; /* Adjust zoom level */
+    height: 300%;
+    transform: translate(0, 0);
+    transition: transform 0.1s ease;
+  }
+  
+.container-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30vh;
+    gap: 10px;
+}
+
+.rev-card{
+    width: 100%;
+    margin-top: 4vh;
+    margin-left: 0vw;
+    width: 50vw;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+
+.rev-card .card-title{
+    font-size: 2vw;
+    margin-left: 20vw ;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.rev-card .card-text{
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-left: 1vw;
+}
+
+.stars{
+    display: flex;
+    gap: 1vw;
+    font-size: 3vh;
+    margin-top: 10px;
+    margin-left: 22vw;
+    margin-right: 0vw;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gold;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     nav {
@@ -104,4 +447,120 @@ ul {
         top: -1.2vh; /* Ensures basket stays in view */
         font-size: 4.5vw; /* Scales up on smaller screens */
     }
+
+    .carousel,
+    .carousel-item {
+        width: 100vw;  /* Increased carousel size on smaller screens */
+        height: 50vh;  /* Adjusted height for better fit */
+    }
+
+    .main-card {
+        margin-left: 0;  /* Reset for full width on small screens */
+        margin-top: 20vh;  /* Add space from the top */
+        padding-left: 5vw;
+        width: 90%; /* Ensure card fits smaller screens */
+        border: none;
+    }
+
+    .main-card .card-title {
+        font-size: 14vw; /* Larger text for better readability */
+        margin-left: 8vw;
+        margin-top: -20vh;
+        width: 100%;
+    }
+
+    .main-card .card-text {
+        font-size: 4vw; /* Larger text for better readability */
+        margin-left: 19vw;
+        margin-top: 0vh;
+    }
+
+    .main-card .rating {
+        font-size: 4vw; /* Larger text for better readability */
+        margin-left: 22vw;
+        margin-top: 0vh;
+    }
+
+    .card-price {
+        margin-left: 9vw;  /* Adjust margin for smaller screens */
+        margin-top: 4vh;  /* Add space between card and price */
+    }
+
+    .card-price-title{
+        font-size: 4.5vw; /* Larger text for better readability */
+        margin-left: -2vw;
+
+    }
+
+    .card-price .input-group{
+        font-size: 3vw; /* Larger text for better readability */
+        margin-top: -1vh;  /* Add space between price and add to cart button */
+        width: 80%;
+        margin-left: 4vw ;
+    }
+
+    .card-price .addtocart {
+        font-size: 3vw; /* Larger text for better readability */
+        margin-left: -5vw;  /* Adjust margin for smaller screens */
+        margin-top: 4.2vh;
+        width: 80%;
+    }
+
+    .card-price .buynow {
+        font-size: 3vw; /* Larger text for better readability */
+        margin-left: -29vw;  /* Adjust margin for smaller screens */
+        margin-top: 9vh;
+        width: 80%;
+    }
+
+
+    .card-price .material-options{
+        font-size: 3vw; /* Larger text for better readability */
+        margin-top: 3vh;  /* Add space between options and add to cart button */
+        width: 80%;
+        margin-left: 5vw ;
+    }
+
+    .mini-photo-grid {
+        grid-template-columns: repeat(2, 1fr);  /* Two columns for better fit */
+        gap: 8px; /* Adjust space between images */
+        margin-left: 0;
+        margin-top: 4vh;
+    }
+
+    .video-card {
+        width: 80vw;
+        height: auto;
+        margin-top: 12vh;  /* Adjust margin for proper spacing */
+        margin-left: 6vw;
+    }
+
+    .rev-card {
+        width: 90vw;  /* Full width for review card */
+        margin-top: 3vh;
+    }
+
+    .rev-card .card-title {
+        font-size: 4vw; /* Larger title for better readability */
+        text-align: center;
+        margin-left: 0vw;
+    }
+
+    .rev-card .card-text {
+        font-size: 3vw; /* Larger text for better readability */
+    }
+
+    .stars {
+        font-size: 3vh; /* Larger stars for better visibility */
+        margin-left: 30vw;  /* Adjust margin */
+    }
+
+    .input-group {
+        width: 80%;  /* Make input group wider for small screens */
+    }
+
+    .custom-radio {
+        padding: 1vh 2vw;  /* Adjust padding for better interaction */
+    }
+
 }
